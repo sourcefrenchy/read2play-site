@@ -3,86 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read 2 Play — Turn reading into rewards</title>
-    <meta name="description" content="Read 2 Play turns kids' reading time into screen time — collect creatures, battle, and climb a private family leaderboard.">
+    <title>Read 2 Play | Reading earns screen time</title>
+    <meta name="description" content="Kids earn screen time by reading, collect 148+ creature cards and play real turn-based battles. No ads, no tracking, parent-controlled.">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <meta property="og:title" content="Read 2 Play — Turn reading into rewards">
-    <meta property="og:description" content="Kids bank reading time to earn screen time, collect creatures, and battle. Private and parent-controlled.">
-    <meta property="og:image" content="icon.png">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --coral:#FF6B6B; --ink:#2D3436; --muted:#636E72; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6; color: var(--ink);
-            background: radial-gradient(1200px 600px at 50% -10%, #FFF3D6 0%, #F5EACC 45%, #FFE3C4 100%);
-            min-height: 100vh; padding: 28px 20px 48px;
-        }
-        .wrap { max-width: 760px; margin: 0 auto; }
-        .hero {
-            text-align: center; background: rgba(255,255,255,0.85); backdrop-filter: blur(6px);
-            border-radius: 32px; padding: 44px 32px 40px;
-            box-shadow: 0 12px 40px rgba(180,120,40,0.14); margin-bottom: 24px;
-        }
-        .hero img.logo { width: min(360px, 78%); height: auto; filter: drop-shadow(0 6px 14px rgba(0,0,0,0.12)); }
-        .tagline { font-size: 21px; color: var(--muted); margin: 18px 0 26px; }
-        .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; align-items: center; }
-        .badge {
-            display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: #fff;
-            text-decoration: none; padding: 13px 24px; border-radius: 14px; font-weight: 600; font-size: 16px;
-            transition: transform .15s ease, box-shadow .15s ease; box-shadow: 0 6px 16px rgba(45,52,54,0.25);
-        }
-        .badge:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(45,52,54,0.3); }
-        .appicon { width: 56px; height: 56px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.18); }
-        .grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px; margin-bottom: 24px;
-        }
-        .card {
-            background: #fff; border-radius: 22px; padding: 26px 24px;
-            box-shadow: 0 6px 22px rgba(0,0,0,0.06); transition: transform .15s ease;
-        }
-        .card:hover { transform: translateY(-3px); }
-        .card .ico { font-size: 34px; }
-        .card h3 { font-size: 18px; margin: 10px 0 4px; }
-        .card p { color: var(--muted); font-size: 15px; }
-        .links {
-            text-align: center; background: #fff; border-radius: 22px; padding: 22px;
-            box-shadow: 0 6px 22px rgba(0,0,0,0.06); font-weight: 600;
-        }
-        .links a { color: var(--coral); text-decoration: none; margin: 0 14px; }
-        .links a:hover { text-decoration: underline; }
-        footer { text-align: center; margin-top: 26px; font-size: 13px; color: #8a8f93; }
-    </style>
+    <meta name="apple-itunes-app" content="app-id=6759507366">
+    <meta property="og:title" content="Read 2 Play | Reading earns screen time">
+    <meta property="og:description" content="Kids bank reading time to earn screen time, collect 148+ creature cards and battle. Private and parent-controlled.">
+    <meta property="og:image" content="https://sourcefrenchy.github.io/read2play-site/icon-600.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrap">
-        <div class="hero">
-            <img class="logo" src="logo.png" alt="Read 2 Play">
-            <p class="tagline">Turn reading into rewards — for kids.</p>
-            <div class="cta-row">
-                <img class="appicon" src="icon.png" alt="Read 2 Play app icon">
-                <a class="badge" href="https://apps.apple.com/app/id6759507366">Download on the App Store</a>
-            </div>
-        </div>
-
-        <div class="grid">
-            <div class="card"><div class="ico">📖</div><h3>Read to earn</h3><p>Kids bank reading time and spend it on screen time — at a rate parents control.</p></div>
-            <div class="card"><div class="ico">🐉</div><h3>Collect creatures</h3><p>Earn 120+ unique collectible creature cards by hitting reading milestones.</p></div>
-            <div class="card"><div class="ico">⚔️</div><h3>Battle &amp; train</h3><p>Best-of-three creature battles between siblings — or take on the Wild Ones solo.</p></div>
-            <div class="card"><div class="ico">🏆</div><h3>Optional leaderboard</h3><p>Compare reading with families everywhere — private, parent-controlled, off by default.</p></div>
-            <div class="card"><div class="ico">🔒</div><h3>Privacy first</h3><p>All data stays on your device. No ads, no tracking, no third-party SDKs. COPPA-minded.</p></div>
-            <div class="card"><div class="ico">👨‍👩‍👧</div><h3>Parent controls</h3><p>PIN-gated settings, per-kid conversion rates, and full data deletion anytime.</p></div>
-        </div>
-
-        <div class="links">
-            <a href="privacy.html">Privacy Policy</a>
+    <header class="topbar">
+        <a class="brand" href="index.html"><img src="logo.png" alt="Read 2 Play"></a>
+        <nav>
+            <a href="#features">Features</a>
             <a href="support.html">Support</a>
-            <a href="mailto:support@jma.zone">Contact</a>
+            <a href="privacy.html">Privacy</a>
+        </nav>
+    </header>
+
+    <main class="wrap">
+        <section class="hero panel">
+            <div>
+                <img class="logo" src="logo.png" alt="Read 2 Play">
+                <h1>Reading earns screen time.</h1>
+                <p class="lead">Kids bank minutes by reading, then spend them on games. Every page they read unlocks collectible creature cards and real battles.</p>
+                <a class="store-btn" href="https://apps.apple.com/app/id6759507366">
+                    <img src="apple-touch-icon.png" alt="">
+                    <span><small>Download on the</small><strong>App Store</strong></span>
+                </a>
+                <p class="fine">Free for iPhone and iPad · Optional one-time upgrade · No ads</p>
+            </div>
+            <div class="mascot"><img src="icon-600.jpg" alt="Read 2 Play dragon mascot"></div>
+        </section>
+
+        <h2 class="section-title">See it in action</h2>
+        <p class="section-sub">Battles, cards and a reading bank, built for kids and run by parents.</p>
+        <div class="shots">
+            <img src="shots/01_reveal.jpg" alt="A five-round creature battle between two kids" loading="lazy">
+            <img src="shots/02_creatures.jpg" alt="A collection of creature trading cards" loading="lazy">
+            <img src="shots/03_home.jpg" alt="Home screen with each kid's reading progress" loading="lazy">
+            <img src="shots/05_card.jpg" alt="A full creature card with stats" loading="lazy">
         </div>
 
-        <footer>Read2Play &copy; 2026. All rights reserved.</footer>
-    </div>
+        <h2 class="section-title" id="features">Why kids love it</h2>
+        <p class="section-sub">And why parents keep it on the home screen.</p>
+        <div class="grid">
+            <div class="card panel"><div class="ico">📖</div><h3>Read to earn</h3><p>Kids bank reading time and spend it on screen time, at a rate each parent sets per child.</p></div>
+            <div class="card panel"><div class="ico">🐉</div><h3>148+ creatures</h3><p>Reading milestones unlock trading-card creatures. Kids at the same level get different cards, so every collection is their own.</p></div>
+            <div class="card panel"><div class="ico">⚔️</div><h3>Real battles</h3><p>Five rounds of choices: pick a creature, then Strike, Guard or a Special. Underdog Spirit keeps younger siblings in the game.</p></div>
+            <div class="card panel"><div class="ico">🧮</div><h3>Book challenges</h3><p>Finishing a book earns a Book Rare card and a quick math challenge matched to your child's age.</p></div>
+            <div class="card panel"><div class="ico">🏆</div><h3>Optional leaderboard</h3><p>Off by default. A parent can turn it on to compare reading with families everywhere, using a nickname only.</p></div>
+            <div class="card panel"><div class="ico">🔒</div><h3>Private by design</h3><p>No accounts, ads, analytics or tracking. Data stays on your device and your own iCloud.</p></div>
+        </div>
+
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">Set up in a minute, no account needed.</p>
+        <div class="steps">
+            <div class="step panel"><b>1</b><h3>Parent sets up</h3><p>Create a PIN, add your kids and choose how many play minutes each reading minute earns.</p></div>
+            <div class="step panel"><b>2</b><h3>Kids tap Read</h3><p>Reading time fills their bank and unlocks creature cards along the way.</p></div>
+            <div class="step panel"><b>3</b><h3>Kids tap Play</h3><p>They spend what they earned, with a friendly chime when time is up.</p></div>
+        </div>
+
+        <section class="final panel">
+            <h2>Turn reading into the best part of the day</h2>
+            <p>Free to download. Upgrade once for every creature, battles and unlimited kids. No subscriptions.</p>
+            <a class="store-btn" href="https://apps.apple.com/app/id6759507366">
+                <img src="apple-touch-icon.png" alt="">
+                <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+        </section>
+
+        <footer>
+            <nav>
+                <a href="https://apps.apple.com/app/id6759507366">App Store</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="mailto:support@jma.zone">Contact</a>
+            </nav>
+            Read 2 Play &copy; 2026 JMA. All rights reserved.
+        </footer>
+    </main>
 </body>
 </html>
