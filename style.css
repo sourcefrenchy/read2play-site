@@ -44,7 +44,7 @@ img { max-width: 100%; }
     display: flex; align-items: center; justify-content: space-between; gap: 12px;
     max-width: 1040px; margin: 0 auto 18px; padding: 0 4px;
 }
-.topbar .brand img { height: 44px; display: block; }
+.topbar .brand img { height: 76px; display: block; filter: drop-shadow(0 4px 8px rgba(0,0,0,.12)); }
 .topbar nav { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; }
 .topbar nav a { color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; }
 .topbar nav a:hover { color: var(--coral-deep); }
@@ -149,5 +149,6 @@ footer nav a { color: var(--coral-deep); text-decoration: none; font-weight: 600
     .steps { grid-template-columns: 1fr; }
     .doc { padding: 26px 20px; }
     .topbar nav { gap: 12px; }
+    .topbar .brand img { height: 58px; }
     .topbar nav a { font-size: 14px; }
 }
