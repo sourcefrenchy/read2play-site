@@ -22,46 +22,62 @@
     <main class="narrow">
         <article class="doc panel">
             <h1>Privacy Policy</h1>
-            <p class="updated">Last updated: October 2026</p>
+            <p class="updated">Last updated: November 2026</p>
 
-            <h2>We Don't Collect Your Data</h2>
-            <p>Read 2 Play has no servers, no analytics, no ads, no tracking, and no third-party SDKs. The one exception is the <strong>optional reading leaderboard</strong>, which is off by default and, only if a parent turns it on, publishes a non-identifying nickname, city, and reading score as described below.</p>
+            <h2>Overview</h2>
+            <p>Read 2 Play has no servers of its own, no analytics, no ads, no tracking, and no third-party SDKs. Everything the app records stays on your devices and in your own iCloud account. The one exception is the optional reading leaderboard. It is off by default. If a parent turns it on for a child, a small record is published to a shared database that other Read 2 Play users can see. That record is described below.</p>
 
             <h2>Your Data Stays on Your Device</h2>
-            <p>All reading time, gaming time, creature progress, and household information is stored on your Apple device. Nothing is sent to any server we operate.</p>
+            <p>Reading time, gaming time, creature progress, books, photos, and household information are stored on your Apple device. None of it is sent to us.</p>
 
             <h2>iCloud Sync</h2>
-            <p>If you have iCloud enabled on your Apple account, your data may sync across your own devices through Apple's iCloud/CloudKit service. This is handled entirely by Apple and is subject to <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We do not operate any cloud servers and have no access to your iCloud data.</p>
+            <p>If you are signed in to iCloud, this data may sync between your devices through Apple's iCloud (CloudKit) service, in your own private iCloud database. Apple handles this under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We cannot see your private iCloud data.</p>
 
             <h2>Optional Reading Leaderboard</h2>
-            <p>Read 2 Play includes an <strong>optional</strong> reading leaderboard that lets families compare reading progress. It is <strong>turned off by default</strong>, and a parent must turn it on using the parent PIN. When it is enabled for a child, the app publishes a small, non-identifying record to a shared Apple iCloud (CloudKit) database containing only:</p>
+            <p>The leaderboard lets families compare reading progress. It is off by default, and only a parent can turn it on, behind the parent PIN, one child at a time.</p>
+
+            <p><strong>What is published.</strong> For each child it is turned on for, the app saves one record to the public database of Read 2 Play's iCloud (CloudKit) container, which Apple hosts. The record contains:</p>
             <ul>
-                <li>A <strong>nickname you choose</strong>, never your child's real name;</li>
-                <li>An <strong>optional city name</strong> you may enter (you can leave it blank or hidden), and that city's <strong>country</strong>, shown as a flag;</li>
-                <li>A single emoji avatar, an integer points score earned from reading, and the child's <strong>average reading minutes per day</strong> over the last week.</li>
+                <li>A nickname. When you turn the leaderboard on, the nickname starts out as the name you gave your child in the app and is published straight away. Change it in Ranking Settings to something that isn't your child's real name; the new nickname replaces the old one.</li>
+                <li>A city name, only if you enter one or choose a suggested one, plus that city's country (shown as a flag). You can hide the city at any time.</li>
+                <li>One emoji avatar.</li>
+                <li>A points score earned from reading, books, and creature collection, and the child's average reading minutes per day over the last 7 days.</li>
             </ul>
-            <p>To make entering a city easier, the app offers an optional <strong>"suggest my city"</strong> button. If you tap it, the app requests your device's <strong>approximate</strong> location <strong>once</strong>, converts it to a city name, and immediately discards the coordinates. Only the city name is kept, and only if you choose to keep it. Your precise location is never stored or transmitted. You can always type or hide the city instead.</p>
-            <p>We <strong>never</strong> publish your child's real name, age, birthday, precise location, photos, or any contact information. This record is not linked to your identity and is never used for advertising or tracking. You can turn the leaderboard off at any time, which deletes the published record; deleting your account removes it as well.</p>
+            <p>Apple's CloudKit service also stores, with every record, when it was created and last changed, and a random identifier for the iCloud account that created it. That identifier is specific to Read 2 Play and does not reveal who you are, but it is the same for every child published from the same iCloud account. The record's own name is derived one way from a random internal ID and contains no personal information.</p>
+            <p>We never publish your child's age, birthday, photos, exact location, reading history, or contact details.</p>
+
+            <p><strong>Suggest my city.</strong> If you tap "Current city based on location", the app asks for your device's approximate location once and asks Apple's mapping service which city it is in. The coordinates are then discarded. Only the city name and country are kept, and only if you leave that city in place. Your exact location is never stored or published.</p>
+
+            <p><strong>Who can see it.</strong> Anyone using Read 2 Play can see the leaderboard, so anyone using the app can read the nickname, city, country, emoji, score, and average minutes. Apple stores the records. As the developer, we can view and delete records through Apple's CloudKit tools. We do not sell this data, link it to your identity, or use it for advertising or tracking.</p>
+
+            <p><strong>How long it is kept, and how to remove it.</strong> A record stays published until it is removed. The app sends a delete request when you turn the leaderboard off for a child, tap "Remove [name] from the leaderboard", or use Delete Everything. Please note:</p>
+            <ul>
+                <li>Removal needs an internet connection and must be done on a device signed in to the same iCloud account that first published the record. If it can't reach iCloud at that moment, the record may stay published even though the switch shows off.</li>
+                <li>Removing a child under Manage Kids, or deleting the app, does not remove a published record. Turn the leaderboard off for that child first.</li>
+                <li>If a record was left behind, or you want us to delete one, email us with the nickname and city shown on the leaderboard and we will delete it.</li>
+            </ul>
 
             <h2>No Third-Party Data Sharing</h2>
-            <p>We never send data to advertisers, analytics, or other third parties. There are no ads in this app, and no crash reporting that transmits data off your device.</p>
+            <p>We never send data to advertisers, analytics companies, or other third parties. There are no ads, and no crash reporting that sends data off your device. Apple provides iCloud, CloudKit, location lookup, and the App Store, under Apple's own privacy policy.</p>
 
             <h2>Children's Privacy (COPPA)</h2>
-            <p>Read 2 Play is designed for children. We comply with the Children's Online Privacy Protection Act (COPPA). App data stays on your device and your own iCloud, and all purchase flows are gated behind a parent PIN. The optional reading leaderboard is also parent-PIN-gated and off by default; even when enabled it never publishes a child's real name, age, precise location, or photos.</p>
+            <p>Read 2 Play is designed for children and all purchases sit behind a parent PIN. Outside the leaderboard, a child's data never leaves your devices and your own iCloud. The leaderboard is off by default, can only be turned on by a parent with the PIN, and never publishes a child's age, photos, exact location, or contact details. Because the nickname starts as the name entered in the app, please choose a nickname that isn't your child's real name. A parent can review what is published in Ranking Settings, and can remove it, or ask us to delete it, at any time.</p>
 
             <h2>In-App Purchases</h2>
-            <p>Read 2 Play offers an optional one-time lifetime purchase (Read 2 Play+) processed by Apple through the App Store. We do not collect or store any payment information. All transactions are handled by Apple in accordance with their privacy policy and terms of service.</p>
+            <p>Read 2 Play offers an optional one-time lifetime purchase (Read 2 Play+) processed by Apple through the App Store. We do not collect or store any payment information.</p>
 
             <h2>Data Deletion</h2>
-            <p>You can permanently delete all app data at any time from Settings, then Account &amp; Security, then Delete Everything. This completely removes all data from your device. Deleting the app also removes all local data.</p>
+            <p>You can permanently delete all app data from Settings, then Account &amp; Security, then Delete Everything. This removes the published leaderboard records (see the notes above) and then erases all data on the device. Deleting the app removes local data but leaves any published leaderboard record in place.</p>
 
-            <div class="summary"><p><strong>In short:</strong> your data is yours. It stays on your device and your own iCloud. The only thing that ever leaves is the nickname, city, and reading score you choose to publish on the optional leaderboard.</p></div>
+            <div class="highlight">
+                <p>In short: your data stays on your devices and in your own iCloud. The only thing that can leave is the leaderboard record (nickname, optional city and country, emoji, score, and average reading minutes), and only for a child a parent turned it on for.</p>
+            </div>
 
             <h2>Changes to This Policy</h2>
-            <p>We may update this privacy policy from time to time. Any changes will be reflected in the "Last updated" date above and in the in-app privacy policy.</p>
+            <p>We may update this privacy policy from time to time. Any changes will be reflected in the "Last updated" date above.</p>
 
             <h2>Contact</h2>
-            <p>If you have questions about this privacy policy, contact us at <a href="mailto:support@jma.zone">support@jma.zone</a>.</p>
+            <p>If you have questions about this privacy policy, or want a leaderboard record deleted, contact us at <a href="mailto:support@jma.zone">support@jma.zone</a>.</p>
             <div class="cta-box">
                 <a class="store-btn" href="https://apps.apple.com/app/id6759507366">
                     <img src="apple-touch-icon.png" alt="">
